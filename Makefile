@@ -29,7 +29,7 @@ build: ## Build docker image
 	DOCKER_REPO=${DOCKER_REPO} DOCKER_TAG=${IMAGE_TAG} IMAGE_NAME=${IMAGE_NAME} hooks/build
 	docker images ${REPO_NAME}
 
-lint: lint-dockerfile lint-shellscript lint-markdown ## Lint code
+lint: lint-dockerfile lint-shellscript lint-markdown lint-yaml ## Lint code
 
 lint-dockerfile:
 	docker run --rm -i hadolint/hadolint < Dockerfile
