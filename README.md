@@ -7,7 +7,9 @@
 [![MicroBadger Layers](https://img.shields.io/microbadger/layers/tmknom/yamllint.svg)](https://microbadger.com/images/tmknom/yamllint)
 [![License](https://img.shields.io/github/license/tmknom/yamllint.svg)](https://opensource.org/licenses/Apache-2.0)
 
-Dockerfile template.
+A linter for YAML files based on Docker.
+
+This is [yamllint](https://github.com/adrienverge/yamllint) wrapper.
 
 ## Requirements
 
@@ -15,9 +17,22 @@ Dockerfile template.
 
 ## Usage
 
-```sh
-curl -fsSL https://raw.githubusercontent.com/tmknom/yamllint/master/install | sh -s example
-cd example
+### Lint a YAML file
+
+```shell
+docker run --rm -v "$PWD:/work" tmknom/yamllint foo.yml
+```
+
+### Lint all YAML files in a directory
+
+```shell
+docker run --rm -v "$PWD:/work" tmknom/yamllint .
+```
+
+### Help
+
+```shell
+docker run --rm tmknom/yamllint
 ```
 
 ## Makefile targets
