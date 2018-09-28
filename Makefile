@@ -54,6 +54,9 @@ format-markdown:
 format-json:
 	docker run --rm -v "$(CURDIR):/work" tmknom/prettier --parser=json --write '**/*.json'
 
+format-yaml:
+	docker run --rm -v "$(CURDIR):/work" tmknom/prettier --parser=yaml --write '**/*.y*ml'
+
 
 # https://postd.cc/auto-documented-makefile/
 help: ## Show help
