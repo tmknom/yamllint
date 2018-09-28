@@ -23,12 +23,13 @@ install: ## Install requirements
 	docker pull koalaman/shellcheck
 	docker pull tmknom/shfmt
 	docker pull tmknom/prettier
+	docker pull tmknom/yamllint
 
 build: ## Build docker image
 	DOCKER_REPO=${DOCKER_REPO} DOCKER_TAG=${IMAGE_TAG} IMAGE_NAME=${IMAGE_NAME} hooks/build
 	docker images ${REPO_NAME}
 
-lint: lint-dockerfile lint-shellscript lint-markdown ## Lint code
+lint: lint-dockerfile lint-shellscript lint-markdown lint-yaml ## Lint code
 
 lint-dockerfile:
 	docker run --rm -i hadolint/hadolint < Dockerfile
@@ -38,6 +39,9 @@ lint-shellscript:
 
 lint-markdown:
 	docker run --rm -i -v "$(CURDIR):/work" tmknom/markdownlint
+
+lint-yaml:
+	docker run --rm -v "$(CURDIR):/work" tmknom/yamllint --strict .
 
 format: format-shellscript format-markdown format-json ## Format code
 
