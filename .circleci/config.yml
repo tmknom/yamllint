@@ -1,4 +1,3 @@
----
 # https://circleci.com/docs/2.0/building-docker-images/
 version: 2
 jobs:
