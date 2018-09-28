@@ -41,7 +41,7 @@ lint-markdown:
 	docker run --rm -i -v "$(CURDIR):/work" tmknom/markdownlint
 
 lint-yaml:
-	docker run --rm -v "$(CURDIR):/work" tmknom/yamllint .
+	docker run --rm -v "$(CURDIR):/work" tmknom/yamllint --strict .
 
 format: format-shellscript format-markdown format-json ## Format code
 
