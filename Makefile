@@ -43,7 +43,7 @@ lint-markdown:
 lint-yaml:
 	docker run --rm -v "$(CURDIR):/work" tmknom/yamllint --strict .
 
-format: format-shellscript format-markdown format-json ## Format code
+format: format-shellscript format-markdown format-json format-yaml ## Format code
 
 format-shellscript:
 	$(call list_shellscript) | xargs -I {} docker run --rm -v "$(CURDIR):/work" -w /work tmknom/shfmt -i 2 -ci -kp -w {}
