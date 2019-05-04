@@ -1,8 +1,8 @@
 # yamllint
 
 [![CircleCI](https://circleci.com/gh/tmknom/yamllint.svg?style=svg)](https://circleci.com/gh/tmknom/yamllint)
-[![Docker Build Status](https://img.shields.io/docker/build/tmknom/yamllint.svg)](https://hub.docker.com/r/tmknom/yamllint/builds/)
-[![Docker Automated build](https://img.shields.io/docker/automated/tmknom/yamllint.svg)](https://hub.docker.com/r/tmknom/yamllint/)
+[![Docker Build Status](https://img.shields.io/docker/cloud/build/tmknom/yamllint.svg)](https://hub.docker.com/r/tmknom/yamllint/builds/)
+[![Docker Automated build](https://img.shields.io/docker/cloud/automated/tmknom/yamllint.svg)](https://hub.docker.com/r/tmknom/yamllint/)
 [![MicroBadger Size](https://img.shields.io/microbadger/image-size/tmknom/yamllint.svg)](https://microbadger.com/images/tmknom/yamllint)
 [![MicroBadger Layers](https://img.shields.io/microbadger/layers/tmknom/yamllint.svg)](https://microbadger.com/images/tmknom/yamllint)
 [![License](https://img.shields.io/github/license/tmknom/yamllint.svg)](https://opensource.org/licenses/Apache-2.0)
