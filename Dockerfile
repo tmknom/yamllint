@@ -1,4 +1,4 @@
-FROM alpine:3.9.3
+FROM alpine:3.11.6
 
 # Build-time metadata as defined at http://label-schema.org
 ARG BUILD_DATE
@@ -16,8 +16,8 @@ LABEL org.label-schema.vendor="tmknom" \
       org.label-schema.docker.cmd="docker run --rm  -v \$PWD:/work $REPO_NAME foo.yml" \
       org.label-schema.schema-version="1.0"
 
-ARG PYTHON_VERSION=3.6.8-r2
-ARG MODULE_VERSION=1.15.0
+ARG PYTHON_VERSION=3.8.2-r0
+ARG MODULE_VERSION=1.23.0
 
 # https://github.com/JoshuaRLi/alpine-python3-pip/blob/master/Dockerfile
 RUN set -x && \
