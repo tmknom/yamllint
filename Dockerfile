@@ -17,12 +17,12 @@ LABEL org.label-schema.vendor="tmknom" \
       org.label-schema.schema-version="1.0"
 
 ARG PYTHON_VERSION=3.8.2-r0
-ARG MODULE_VERSION=1.23.0
+ARG YAMLLINT_VERSION
 
 # https://github.com/JoshuaRLi/alpine-python3-pip/blob/master/Dockerfile
 RUN set -x && \
     apk add --no-cache python3=${PYTHON_VERSION} && \
-    pip3 install --no-cache-dir yamllint==${MODULE_VERSION} && \
+    pip3 install --no-cache-dir yamllint==${YAMLLINT_VERSION} && \
     find / -type d -name __pycache__ -exec rm -r {} + && \
     rm -r /usr/lib/python*/ensurepip && \
     rm -r /usr/lib/python*/lib2to3 && \
