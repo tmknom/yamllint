@@ -1,6 +1,11 @@
 # yamllint
 
-[![CircleCI](https://circleci.com/gh/tmknom/yamllint.svg?style=svg)](https://circleci.com/gh/tmknom/yamllint)
+[![Dockerfile Actions Status](https://github.com/tmknom/yamllint/workflows/Dockerfile/badge.svg)](https://github.com/tmknom/yamllint/actions?query=workflow%3ADockerfile)
+[![Shell Script Actions Status](https://github.com/tmknom/yamllint/workflows/Shell%20Script/badge.svg)](https://github.com/tmknom/yamllint/actions?query=workflow%3A%22Shell+Script%22)
+[![Markdown Actions Status](https://github.com/tmknom/yamllint/workflows/Markdown/badge.svg)](https://github.com/tmknom/yamllint/actions?query=workflow%3AMarkdown)
+[![YAML Actions Status](https://github.com/tmknom/yamllint/workflows/YAML/badge.svg)](https://github.com/tmknom/yamllint/actions?query=workflow%3AYAML)
+[![JSON Actions Status](https://github.com/tmknom/yamllint/workflows/JSON/badge.svg)](https://github.com/tmknom/yamllint/actions?query=workflow%3AJSON)
+
 [![Docker Build Status](https://img.shields.io/docker/cloud/build/tmknom/yamllint.svg)](https://hub.docker.com/r/tmknom/yamllint/builds/)
 [![Docker Automated build](https://img.shields.io/docker/cloud/automated/tmknom/yamllint.svg)](https://hub.docker.com/r/tmknom/yamllint/)
 [![MicroBadger Size](https://img.shields.io/microbadger/image-size/tmknom/yamllint.svg)](https://microbadger.com/images/tmknom/yamllint)
